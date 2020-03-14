@@ -1,0 +1,226 @@
+.modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    z-index: 99999;
+    opacity: 0;
+    pointer-events: none;
+    transition: .3s;
+    &.thk-modal, &.err-modal{
+        .title{
+            margin-bottom: 1.5em;
+        }
+    }
+    &.active{
+        opacity: 1;
+    pointer-events: auto;
+    }
+    .modal-overlay{
+        position: absolute;
+        top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(21, 23, 25, .4);
+    }
+    .modal-inner {
+        display: flex;
+        width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    }
+
+    .modal-content {
+        background: #FFFFFF;
+box-shadow: 0px 0px 44px rgba(0, 0, 0, 0.1);
+border-radius: .5em;
+opacity: 1;
+padding: 3.3em;
+position: relative;
+width: 34em;
+    }
+
+    .close-trigger-btn {
+position: absolute;
+right: -3.5em;
+top: 0;
+
+cursor: pointer;
+        div {
+            position: relative;
+            width: 48px;
+    height: 48px;
+&::after, &::before{
+    content: '';
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: #fff;
+}
+&::after{
+transform: rotate(45deg);
+}
+ &::before{
+    transform: rotate(-45deg);
+ }
+        }
+    }
+
+    .title {
+        margin-bottom: .7em;
+        p {
+            text-align: center;
+font-weight: 500;
+font-size: 2em;
+line-height: 1.4;
+color: #B2947B;
+font-variant: small-caps;
+        }
+    }
+
+    .description {
+        margin-bottom: 2.2em;
+        padding: 0;
+        p {
+            margin: 0;
+            text-align: center;
+            line-height: 1.15;
+            
+        }
+    }
+
+    form {}
+
+    .input-wr {
+        margin-bottom: 1em;
+        input{
+            display: block;
+            width: 100%;
+            background: #F4F4F4;
+            border: 1px solid #F4F4F4;
+border-radius: 4px;
+font-size: 1em;
+line-height: 50px;
+color: #333333;
+padding: 0 16px;
+font-weight: 400;
+&::placeholder{
+    font-size: 1em;
+    line-height: 48px;
+    color: #828282;
+    font-weight: 400;
+}
+        }
+    }
+
+    .button-wr {
+        width: 12em;
+            margin: auto;
+        button{
+            width: 100%;
+
+    
+        }
+    }
+}
+.modal{
+    &.subscr-modal{
+        .subscr-title{
+            margin-bottom: 2.5em;
+        p{
+            color: #151719;
+            font-variant: small-caps;
+            text-align: center;
+        }
+    }
+    form{
+
+    }
+        .input-group{
+            display: flex;
+            justify-content: space-between;
+            .input-item{
+                width: calc(50% - .5em);
+            }
+        }
+            
+        .input-item{
+
+        }
+            .input-wr{
+                input{
+
+                }
+            .valid-error{
+
+            }
+        }
+        .radio-wr{
+            margin-bottom: 2em;
+        }
+            .rtitle{
+                p{
+
+                }
+            }
+            .radio-group{
+                display: flex;
+            }
+                .input-wr{
+                    
+                }
+                    label{
+                        position: relative;
+                        width: 6.2em;
+                        display: block;
+                        margin-right: .7em;
+                        img{
+                            display: block;
+                            width: 100%;
+                        }
+                        input{
+                            &:checked{
+                                &+span{
+                                    opacity: 1;
+                                }
+                            }
+                        }
+                        span{
+                            position: absolute;
+                            right: .3em;
+                            top: .8em;
+                            opacity: 0;
+                            transition: .3s;
+                            width: 18px;
+                            img{
+
+                            }
+                        }
+                    }
+        .button-wr{
+            margin-bottom: 2em;
+        }
+    .link-wr{
+        text-align: center;
+        a{
+
+        }
+    }
+}
+}

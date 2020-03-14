@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box
+}
+
+html {
+    font-size: 20px;
+
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: calc(.561rem + .61vw);
+    line-height: 1.37;
+    color: #151719;
+    &.modal-open{
+        overflow: hidden;
+    }
+ 
+}
+
+main {
+    max-width: 100%;
+    @media(max-width: 992px){
+        overflow: hidden;
+    }
+
+}

@@ -1,0 +1,104 @@
+.bonus {
+    padding-top: 2.5em;
+    padding-bottom: 4.3em;
+    .top-part {
+        @media(max-width: 992px){
+            flex-direction: column;
+            font-size: 1.3em;
+            
+            br{
+                display: none;
+
+            }
+        }
+    }
+    .title{
+        margin-bottom: 1em;
+    }
+    .description {
+        margin-bottom: 2.7em;
+    }
+    .bottom-part {
+        text-align: right;
+        margin-top: -.4em;
+        @media(max-width: 992px){
+            flex-direction: column-reverse;
+            font-size: 1.3em;
+            
+            br{
+                display: none;
+
+            }
+        }
+        .img-part {
+            margin-right: 0;
+            margin-left: 5em;
+            width: calc(47% - 2.5em);
+            @media(max-width: 992px){
+                width: auto;
+            margin-left: 0;
+            }
+            
+        }
+        .item-wr {
+            margin-top: 1.2em;
+        }
+        .item{
+            @media(max-width: 992px){
+                flex-direction: row-reverse;
+                text-align: left;
+                img{
+                    margin-left: 0;
+                }
+            }
+            img{
+                margin-left: 1em;
+                display: block;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+        
+    }
+
+    .img-part {
+        width: calc(50% - 2.5em);
+        margin-right: 5em;
+        @media(max-width: 992px){
+            width: auto;
+        margin-right: 0;
+        }
+        img {
+            width: 100%;
+        }
+    }
+
+    .item-wr {
+        width: calc(51.5% - 2.5em);
+        @media(max-width: 992px){
+            width: 100%;
+        }
+        
+    }
+
+    .item {
+        display: flex;
+        margin-bottom: 2.5em;
+        /* align-items: center; */
+    }
+
+    .pic {
+        margin-right: .7em;
+        margin-bottom: auto;
+        img {}
+    }
+
+    .text-wr {
+        margin-top: .8em;
+        p {
+            line-height: 1.5;
+        }
+    }
+
+}
