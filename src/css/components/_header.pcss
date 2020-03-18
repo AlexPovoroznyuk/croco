@@ -25,7 +25,7 @@ box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.25);
     align-items: center;
     cursor: pointer;
     @media(max-width:1200px){
-        margin-right: 15px;
+        margin-right: 25px;
     }
     &:hover{
         rect{
@@ -60,10 +60,16 @@ box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.25);
 
 }
 .order-button{
-    max-width: 12.25em;
+    max-width: 13.25em;
     width: 100%;
     margin-left: auto;
     margin-right: 2em;
+    &:hover{
+        border: 2px solid #fff;
+        span{
+            color: #fff;
+        }
+    }
     @media(max-width: 460px){
         font-size: .8em;
         margin: auto;

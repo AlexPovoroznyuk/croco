@@ -1,32 +1,112 @@
 <!DOCTYPE html>
 <html>
-    @@include('./components/_head.html')
+    @@include('./components/_head.html', {
+        "rel-path" : ""
+    })
     <body>
-        @@include('./components/_header.html')
+        @@include('./components/_ru-form.html')
+        @@include('./components/_header.html', {
+            "button" : "Заказать карту",
+            "flag" : "img/pics/ru.png",
+            "rel-path" : "",
+            "form-id" : "127552",
+            "home-path" : "/"
+        })
         <main>
-            @@include('./components/_first-screen.html')
-            @@include('./components/_use-block.html')
-            @@include('./components/_bonus.html')
-            @@include('./components/_action.html')
-            @@include('./components/_conditions.html')
-            @@include('./components/_card-issuance.html')
-            @@include('./components/_partners.html')
-            @@include('./components/_best.html')
+            @@include('./components/_first-screen.html', {
+                "title" : "Дебетовая карта СrocoBit —<br> ваши активы всегда с вами!",
+                "descr" : "Выводите BTC, ETH, USTD и EDC в любом банкомате мира<br> без посредников",
+                "button" : "Заказать карту",
+                "rel-path" : "",
+                "form-id" : "127552"
+            })
+            @@include('./components/_use-block.html', {
+                "title" : "Используйте карту CrocoBit везде!",
+                "descr" : "Новый стандарт удобства и простоты использования <br>криптовалют с картой CrocoBit ",
+                "item1" : "Удобные расчеты картой в магазинах",
+                "item2" : "Безопасная оплата с <br>Apple Pay",
+                "item3" : "Доступ к вашим цифровым активам 24/7",
+                "item4" : "Вывод фиатных средств в любом банкомате по всему миру",
+                "button" : "Заказать карту",
+                "form-id" : "127552",
+                "rel-path" : ""
+            })
+            @@include('./components/_bonus.html', {
+                "title" : "Используйте ваши бонусы для покупок!",
+                "descr" : "С картой CrocoBit пользоваться всеми преимуществами <br>EDC Blockchain стало еще проще!",
+                "item1" : "Отправляйте монеты EDC в лизинг и получайте бонусы прямо на карту CrocoBit",
+                "item2" : "Развивайте собственную партнерскую команду при помощи инновационных инструментов EDC Blockchain, повышайте торговые обороты, масштабируйте свой бизнес и расширяйте целевую аудиторию.",
+                "item3" : "Получайте бонусы и совершайте покупки без лишних посредников в любой точке мира с картой CrocoBit!",
+                "item4" : "Используйте возможности новых финансовых инструментов и надежность традиционных платежных систем в одной удобной банковской карте CrocoBit!",
+                "rel-path" : ""
+            })
+            @@include('./components/_action.html', {
+                "title" : "Первые пользователи карты<br> участвуют в акции!",
+                "descr" : "Закажите карту CrocoBit до 1 мая 2020 и получите<br> гарантированные призы от EDC Blockchain",
+                "timer-head" : "До конца:",
+                "rel-path" : "",
+                "lang" : "ru"
+            })
+            @@include('./components/_conditions.html', {
+                "title": "Самые привлекательные условия — <br>только с картой CrocoBit!",
+                "item1" : "Срок действия карты",
+                "item1-value" : "1 год",
+                "item2" : "Пополнение карты",
+                "item2-value" : "бесплатно",
+                "item3" : "Обслуживание карты",
+                "item3-value" : "бесплатно",
+                "item4" : "Комиссия при оплате в магазинах",
+                "item4-value" : "0%",
+                "link" : "Условия активации карты",
+                "button" : "Заказать карту",
+                "form-id" : "127552",
+                "rel-path" : ""
+            })
+            @@include('./components/_card-issuance.html', {
+                "title" : "Получить карту CrocoBit легко!",
+                "descr" : "Заказ и оформление карты займет всего несколько минут",
+                "item1" : "Заполните анкету",
+                "item2" : "Выберите удобный способ доставки (DHL или заказное письмо)",
+                "item3" : "Оплатите стоимость карты и доставку (оплата в BTC или ETH)",
+                "item4" : "Получите карту и погрузитесь в использование цифровых активов в реальной жизни!",
+                "button" : "Оформить карту",
+                "form-id" : "127552",
+                "rel-path" : ""
+            })
+            @@include('./components/_partners.html',{
+                "title" : "Наши партнеры —",
+                "descr" : "Гарантия стабильности, надежности и безопасности работы с дебетовыми картами CrocoBit!",
+                "rel-path" : ""
+            })
+            @@include('./components/_best.html', {
+                "title" : "CrocoBit — все лучшее из мира высоких <br>технологий на одной карте!",
+                "txt1" : "С картой CrocoBit все безграничные возможности нового цифрового мира помещаются в вашем кошельке!",
+                "txt2" : "Успейте заказать карту до 1 мая 2020 и получите стильные подарки от EDC Blockchain",
+                "button" : "Оформить карту",
+                "form-id" : "127552",
+                "rel-path" : "" 
+            })
+            @@include('./components/_coockies.html', {
+                "rel-path" : "",
+                "button" : "Я согласен",
+                "text" : "Мы используем куки в функциональных и аналитических целях."
+            })
         </main>
-        @@include('./components/_footer.html')
-        <!-- @@include('./components/_modals.html', {
-            "subscribeTitle" : "Fill in the information",
-            "name-inp" : "Full name",
-            "phone-inp" : "Phone",
-            "country" : "Country",
-            "post-code" : "Postcode",
-            "region" : "State/Province/Region",
-            "city" : "City/Departament",
-            "address" : "Street address",
-            "method" : "Choose a shipping method",
-            "subscr-btn" : "order card",
-            "instructions" : "Card activation instructions"
-        }) -->
-        @@include('./components/_scripts.html')
+        @@include('./components/_footer.html',{
+            "rel-path" : "",
+            "title1" : "Инфо",
+            "title2" : "Продукты",
+            "link1" : "Политика конфиденциальности",
+            "link2" : "Правила пользования",
+            "link3" : "Crocobit P2P",
+            "link4" : "Расширение Crocobit ",
+            "link5" : "ECRO System",
+            "follow" : "Следите за нами"
+        })
+        
+
+        @@include('./components/_scripts.html', {
+            "rel-path" : ""
+        })
     </body>
 </html>
